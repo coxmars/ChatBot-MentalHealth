@@ -28,7 +28,7 @@ model.load_state_dict(model_state)
 model.eval()
 
 # This is the name of the chatbot.
-bot_name = "Sam"
+bot_name = "Jarvis"
 
 # This function is used to get a response from the chatbot.
 def get_response(msg):
