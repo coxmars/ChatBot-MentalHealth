@@ -12,6 +12,10 @@ app = Flask(__name__)
 def index_get():
     return render_template('index.html')
 
+@app.get("/chatbot")
+def chatbot_get():
+    return render_template('chatbot.html')
+
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
